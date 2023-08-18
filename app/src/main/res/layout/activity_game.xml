@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <afzal.mugrai.vo.avalanche.TouchGameView
+        android:id="@+id/game_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".99" />
+
+    <Button
+        android:id="@+id/jumpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JUMP"
+        android:layout_weight=".01"/>
+
+</LinearLayout>

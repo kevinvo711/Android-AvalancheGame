@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Avalanche</string>
+
+    <string name="back">Back</string>
+
+    <!-- Settings -->
+    <string name="setting_name">Settings</string>
+    <string name="controller">Controls</string>
+    <string name="use_buttons">Use buttons</string>
+    <string name="tilt_phone">Tilt the phone to move</string>
+    <string name="orientation">Phone Orientation</string>
+    <string name="music">Music</string>
+    <string name="music_On">Music On</string>
+    <string name="music_Off">Music Off</string>
+    <string name="sound_effect">Sound Effects</string>
+    <string name="sound_effect_On">Sound Effect On</string>
+    <string name="sound_effect_Off">Sound Effect Off</string>
+
+    <!-- Help -->
+    <string name="help_name">Help</string>
+
+
+    <string name="action_settings">Settings</string>
+</resources>

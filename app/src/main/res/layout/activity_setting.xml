@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ScrollView to allow the user to be able to drag and scroll through the text -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/RelativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/setting_name"
+            android:id="@+id/settingTv"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/music"
+            android:id="@+id/musicTv"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/settingTv"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioGroup
+            android:id="@+id/musicControls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/musicTv"
+            android:layout_alignStart="@+id/musicTv">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music_On"
+                android:id="@+id/musicOn"
+                android:layout_below="@+id/musicTv"
+                android:layout_alignStart="@+id/musicTv"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music_Off"
+                android:id="@+id/musicOff"
+                android:layout_below="@+id/musicOn"
+                android:layout_alignStart="@+id/musicOn"
+                android:checked="true" />
+        </RadioGroup>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:id="@+id/backBttn"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/musicControls"
+            android:layout_alignStart="@+id/musicControls" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
